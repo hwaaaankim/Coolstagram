@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/front/common :: head('포트폴리오')">
+</head>
+
+<body>
+	<script th:inline="javascript">
+		var web = /*[[${web}]]*/ 'default';
+		var detail = /*[[${detail}]]*/ 'detail';
+		var sns = /*[[${sns}]]*/ 'default';
+	</script>
+	<script th:src="@{/library/front/js/portfolio.js}"></script>
+
+	<th:block th:replace="fragments/front/common :: header-sub"></th:block>
+	<section class="iq-breadcrumb overview-block-pt text-center iq-bg iq-bg-fixed iq-over-black-90 iq-box-shadow"
+		style="background: url(/library/front/images/about/04.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading-title iq-breadcrumb-title iq-mtb-100">
+						<h1 class="title iq-tw-8 iq-font-white">포트폴리오</h1>
+						<div class="divider white"></div>
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="/home"><i class="ion-home"></i> Home</a></li>
+						<li class="active">portfoilo</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="main-content">
+		<section id="blog" class="iq-page-blog overview-block-ptb">
+			<div class="container">
+				<div class="row">
+					<div class="service-tap tabs">
+						<ul id="tab-menu">
+							<li id="detail">Detail Page</li>
+							<li id="web">Web site</li>
+							<li id="sns">SNS</li>
+						</ul>
+					</div>
+					<div id="content-wrap">
+					
+					</div>
+					<div id="pagination-wrap">
+					
+					</div>
+				</div>
+			</div>
+			
+			
+		</section>
+	</div>
+	<footer class="iq-footer white-bg text-center" th:replace="fragments/front/common :: footer"></footer>
+	<th:block th:replace="fragments/front/common :: btn-group"></th:block>
+	<th:block th:replace="fragments/front/script"></th:block>
+
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="Coolstagram" />
+<meta name="description" content="Coolstagram" />
+<meta name="author" content="Coolstagram" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title th:text="${title}"></title>
+
+<link rel="shortcut icon" th:href="@{/library/front/images/favicon.ico}" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;Raleway:300,400,500,600,700,800,900">
+<link rel="stylesheet" th:href="@{/library/front/css/bootstrap.min.css}">
+<link rel="stylesheet" type="text/css" th:href="@{/library/front/css/owl-carousel/owl.carousel.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/library/front/css/font-awesome.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/library/front/css/magnific-popup/magnific-popup.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/library/front/css/animate.css}" />
+<link rel="stylesheet" th:href="@{/library/front/css/ionicons.min.css}">
+<link rel="stylesheet" th:href="@{/library/front/css/style.css}">
+<link rel="stylesheet" th:href="@{/library/front/css/flaticon.css}">
+<link rel="stylesheet" th:href="@{/library/front/css/responsive.css}">
+<link rel="stylesheet" th:href="@{/library/front/css/custom.css}" />
+<script th:src="@{/library/front/js/jquery-1.12.4.min.js}"></script>
+</head>
+<body>
+	
+	<th:block th:fragment="header-main">
+		<div id="loading" class="green-bg">
+			<div id="loading-center">
+				<div class="boxLoading"></div>
+			</div>
+		</div>
+		<header id="header-wrap" data-spy="affix" data-offset-top="55">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="navbar navbar-default">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed"
+									data-toggle="collapse"
+									data-target="#bs-example-navbar-collapse-1"
+									aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span> <span
+										class="icon-bar"></span> <span class="icon-bar"></span> <span
+										class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" th:href="@{/home}"> 
+								<img th:src="@{/library/front/images/logo.png}" alt="logo">
+								</a>
+							</div>
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-right" id="top-menu">
+									<li><a th:href="@{/home}">Home</a></li>
+									<li><a href="#about">쿨스타서비스</a></li>
+									<li><a href="#review">고객후기</a></li>
+									<li><a href="#contact">문의하기</a></li>
+									<li><a th:href="@{/portfolio}">포트폴리오</a></li>
+									<li><a href="javascript:void(0)">상품 안내</a>
+										<ul class="dropdown-content">
+											<li class="c-pointer"><a href="#packages">추천 패키지</a></li>
+											<li class="c-pointer"><a th:href="@{/packages}">상품 전체보기</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:void(0)">서비스안내</a>
+										<ul class="dropdown-content">
+											<li class="c-pointer"><a th:href="@{/service}">쿨스타서비스</a></li>
+											<li class="c-pointer"><a th:href="@{/influencer}">인플루언서</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:void(0)">커뮤니티</a>
+										<ul class="dropdown-content">
+											<li class="c-pointer"><a th:href="@{/event}">이벤트 당첨자</a></li>
+											<li class="c-pointer"><a th:href="@{/notice}">인스타그램 꿀팁</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+	</th:block>
+	
+	<th:block th:fragment="header-sub">
+		<div id="loading" class="green-bg">
+			<div id="loading-center">
+				<div class="boxLoading"></div>
+			</div>
+		</div>
+		<header id="header-wrap" data-spy="affix" data-offset-top="55">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="navbar navbar-default">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed"
+									data-toggle="collapse"
+									data-target="#bs-example-navbar-collapse-1"
+									aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span> <span
+										class="icon-bar"></span> <span class="icon-bar"></span> <span
+										class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" th:href="@{/home}"> 
+								<img th:src="@{/library/front/images/logo.png}" alt="logo">
+								</a>
+							</div>
+							<div class="collapse navbar-collapse"
+								id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-right" id="top-menu">
+									<li><a th:href="@{/home}">Home</a></li>
+									<li><a th:href="@{/portfolio}">포트폴리오</a></li>
+									<li><a href="javascript:void(0)">상품 안내</a>
+										<ul class="dropdown-content">
+											<li class="c-pointer"><a href="/home#packages">추천 패키지</a></li>
+											<li class="c-pointer"><a th:href="@{/packages}">상품 전체보기</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:void(0)">서비스안내</a>
+										<ul class="dropdown-content">
+											<li class="c-pointer"><a th:href="@{/service}">쿨스타서비스</a></li>
+											<li class="c-pointer"><a th:href="@{/influencer}">인플루언서</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:void(0)">커뮤니티</a>
+										<ul class="dropdown-content">
+											<li class="c-pointer"><a th:href="@{/event}">이벤트 당첨자</a></li>
+											<li class="c-pointer"><a th:href="@{/notice}">인스타그램 꿀팁</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+	</th:block>
+	
+	<footer class="iq-footer white-bg text-center" th:fragment="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="footer-info iq-mt-50 iq-mb-30">
+						<img id="logo_img"
+							class="img-responsive center-block iq-mb-10 wow zoomIn"
+							data-wow-duration="1s"
+							src="/library/front/images/logo-footer.png" alt="">
+						<p>
+							(주)다담 <br>사업자등록번호 : 833-87-01002 <br>본사 : 서울시 영등포구
+							당산로16길 13-1 다담빌딩 <br>대표번호 : 1833-5180 <br>이메일 :
+							contact@dadamlabs.co.kr
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="footer-copyright iq-ptb-20">
+						© Copyright 2021 coolstagram by <a target="_blank" href="#">dadam</a>.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<th:block th:fragment="btn-group">
+		<div id="back-to-top">
+			<a class="top" id="top" href="#top"> 
+			<i class="ion-ios-upload-outline"></i>
+			</a>
+		</div>
+		<div id="call-contact">
+			<a class="call" href="javascript:void(0)"> 
+			<ion-icon name="call-outline"></ion-icon></a>
+		</div>
+	
+		<div id="kakao-contact">
+			<a class="kakao" href="javascript:void(0)"> <i
+				class="flaticon-kakao-talk"></i></a>
+		</div>
+		<div th:fragment="modal">
+			<div id="modal-btn">
+				<a class="m-btn" id="m-btn" href="javascript:void(0)"><img
+					th:src="@{/library/front/images/test.gif}" /></a>
+			</div>
+			<div id="modal-background"></div>
+			<div id="modal">
+				<div id="btn-group">
+					<div class="btn-style" id="close-btn">X</div>
+				</div>
+				<div class="m-select">
+					<nav>
+						<div class="drop-btn" id="con-title">
+							<h5>진행중인 이벤트</h5>
+							<span class="fas fa-caret-down"></span>
+						</div>
+						<div class="wrapper">
+							<ul class="menu-bar">
+								<li id="one"><a href="#">
+										<div class="icon">
+											<span class="fas fa-star"></span>
+										</div>진행중인 이벤트
+								</a></li>
+								<li id="two" class="setting-item"><a href="#">
+										<div class="icon">
+											<span class="fab fa-angellist"></span>
+										</div>이번주 행운의 당첨자
+								</a></li>
+								<li id="three" class="help-item"><a href="#">
+										<div class="icon">
+											<span class="fas fa-bell"></span>
+										</div>쿨스타 뉴스
+								</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="m-content">
+					<div class="con-one m-slide">
+						<div class="owl-carousel" data-autoplay="true" data-loop="true"
+							data-nav="true"data-items="1">
+							<div class="item">
+								<img th:src="@{/library/front/images/modal/modal_size.jpg}">
+							</div>
+							<div class="item">
+								<img th:src="@{/library/front/images/modal/modal_size.jpg}">
+							</div>
+							<div class="item">
+								<img th:src="@{/library/front/images/modal/modal_size.jpg}">
+							</div>
+						</div>
+					</div>
+					<div class="con-two m-event">
+						<img th:src="@{/library/front/images/modal/modal_size02.jpg}">
+						<span>당첨자 게시판 바로가기</span>
+					</div>
+					<div class="con-three m-event">
+						<img th:src="@{/library/front/images/modal/modal_size02.jpg}">
+						<span>당첨자 게시판 바로가기</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</th:block>
+</body>
+</html>

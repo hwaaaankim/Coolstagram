@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/front/common :: head('쿨스타 부가서비스')">
+</head>
+
+<body>
+	<th:block th:replace="fragments/front/common :: header-sub"></th:block>
+	<section class="iq-breadcrumb overview-block-pt text-center iq-bg iq-bg-fixed iq-over-black-90 iq-box-shadow">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading-title iq-breadcrumb-title iq-mtb-100">
+						<h1 class="title iq-tw-8 iq-font-white">부가서비스</h1>
+						<div class="divider white"></div>
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="javascript:void(0)"><i class="ion-home"></i> Home</a></li>
+						<li class="active">service</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="main-content">
+		<section class="about-area section-gap">
+			<div class="container">
+				<div class="row">
+					<div class="service-tap tabs">
+						<ul>
+							<li rel="tab1" class="active">스룩페이 제휴</li>
+							<li rel="tab2">이노페이 안심결제</li>
+							<li rel="tab3">컨텐츠 자체제작</li>
+						</ul>
+					</div>
+					<div id="tab1" class="col-lg-12 tab-content">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="iq-blog-box">
+									<div class="iq-blog-image clearfix">
+										<img class="img-responsive center-block"
+											th:src="@{/library/front/images/services/srook_detail.jpg}"
+											alt="#">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="col-lg-12 tab-content">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="iq-blog-box">
+									<div class="iq-blog-image clearfix">
+										<img class="img-responsive center-block"
+											th:src="@{/library/front/images/services/inno_detail.jpg}"
+											alt="#">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="tab3" class="col-lg-12 tab-content">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="iq-blog-box">
+									<div class="iq-blog-image clearfix">
+										<img class="img-responsive center-block"
+											th:src="@{/library/front/images/services/contents_detail.jpg}"
+											alt="#">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="iq-footer white-bg text-center" th:replace="fragments/front/common :: footer"></footer>
+	<th:block th:replace="fragments/front/common :: btn-group"></th:block>
+	<th:block th:replace="fragments/front/script"></th:block>
+</body>
+
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/front/common :: head('쿨스타 패키지')">
+</head>
+
+<body>
+	
+	<th:block th:replace="fragments/front/common :: header-sub"></th:block>
+	<section class="iq-breadcrumb overview-block-pt text-center iq-bg iq-bg-fixed iq-over-black-90 iq-box-shadow"
+		style="background: url(/library/front/images/about/04.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading-title iq-breadcrumb-title iq-mtb-100">
+						<h1 class="title iq-tw-8 iq-font-white">쿨스타 상품 안내</h1>
+						<div class="divider white"></div>
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="home"><i class="ion-home"></i> Home</a></li>
+						<li class="active">packages</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="package__title">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 packages__title">
+					<div class="title__text">
+						<h2>이젠 광고도 실속있는 가격으로.</h2>
+						<h3>
+							고객님께 딱 맞는 구성으로 만든 쿨스타그램만의 특별한 패키지 상품.<br> <span>이번
+								한달, 20% 할인된 가격</span>으로 만나보세요.
+						</h3>
+						<p>
+							<a href="#package-01" class="scroll"><span class="mint">베이직
+									패키지</span>
+							</a> | <a href="#package-02" class="scroll"><span
+								class="blue">스탠다드 패키지</span>
+							</a> | <a href="#package-03"
+								class="scroll"><span class="orange">토탈서비스 패키지</span>
+							</a> | <a href="#package-04" class="scroll">
+							<span class="pink">프리미엄 패키지</span>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="text-center">
+			<div class="packages__separation">
+				<span>Package Services</span>
+				<div class="line"></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="package__01">
+		<div class="container">
+			<div class="row">
+				<div class="packages__wrap col-lg-12 col-md-12 col-sm-12" id="package-01">
+					<div class="packages__item">
+						<h4 class="mint">베이직 패키지</h4>
+						<div class="packages__line bg-mint"></div>
+						<p>
+							첫인상과 즉흥성이 중요하게 작용하는 맛집마케팅은<br />네이버와 인스타그램 노출 전략으로, 주요 포인트 [검색 후
+							쉽게 눈에 띄는 상태] 와 [맛있는 음식, 분위기 메뉴] 등<br />시간단축성과 편리성을 어필할 수 있는
+							랜딩페이지로 방문 유저를 잠재고객으로 전환시키는 마케팅입니다.
+						</p>
+						<div class="packages__price bg-mint">
+							<h6>
+								<del>￦ 2,400,000~</del>
+							</h6>
+							<h5>
+								<span><i class="fas fa-arrow-right fa-1x"></i></span>￦
+								1,980,000~
+							</h5>
+						</div>
+					</div>
+					<div class="owl-carousel" data-autoplay="true" data-loop="true"
+						data-nav="true" data-items="3" data-items-laptop="3" data-items-tab="2" data-items-mobile="1">
+						<div class="item">
+							<div class="packages__box box-hover-mint">
+								<div class="title-bg box-mint">
+									<h4>인스타그램 AD 2종</h4>
+								</div>
+								<div class="main">
+									<p>- 블로그 상위노출</p>
+									<span>변동가</span>
+								</div>
+								<div class="main">
+									<p>- 인기게시물 상위노출</p>
+									<span>변동가</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="packages__box box-hover-mint">
+								<div class="title-bg box-mint">
+									<h4>인스타그램 마케팅 1종</h4>
+								</div>
+								<div class="main">
+									<p>- 최적화 계정 구매</p>
+									<span>(￦ 1,000,000)</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="packages__box box-hover-mint">
+								<div class="title-bg box-mint">
+									<h4>Web 미디어 마케팅 2종</h4>
+								</div>
+								<div class="main">
+									<p>- 랜딩사이트 제작</p>
+									<span>(￦ 900,000)</span>
+								</div>
+								<div class="main">
+									<p>- 영상 제작</p>
+									<span>(￦ 500,000)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="package__02" class="bg-lightgray">
+		<div class="container">
+			<div class="row">
+				<div class="packages__wrap col-lg-12 col-md-12 col-sm-12" id="package-02">
+					<div class="packages__item">
+						<h4 class="blue">스탠다드 패키지</h4>
+						<div class="packages__line bg-blue"></div>
+						<p>
+							브랜드 구축은 통일감, 신뢰성, 인지도 3가지 요소를 소비자의 호흡에 맞춰 확장해나가는 마케팅 전략이 필요합니다.<br />따라서
+							포스팅마다 통일된 양식과 분명한 메시지로 일관성을 유지할 수 있는 디자인과 원고가 필요하고 <br />영향력 있는
+							사람을 내세워 인지도 상승을 목표할 수 있어야 합니다.
+						</p>
+						<div class="packages__price bg-blue">
+							<h6>
+								<del>￦ 4,700,000~</del>
+							</h6>
+							<h5>
+								<span><i class="fas fa-arrow-right fa-1x"></i></span>￦
+								3,760,000~
+							</h5>
+						</div>
+					</div>
+					<div class="packages__box__wrap">
+						<div class="owl-carousel" data-autoplay="true" data-loop="false"
+							data-nav="true" data-dots="false" data-items="3"
+							data-items-laptop="3" data-items-tab="2" data-items-mobile="1"
+							data-items-mobile-sm="1" data-margin="20">
+							<div class="item">
+								<div class="packages__box box-hover-blue">
+									<div class="title-bg box-blue">
+										<h4>인스타그램 AD 3종</h4>
+									</div>
+									<div class="main">
+										<p>- 인기게시물 상위노출</p>
+										<span>변동가</span>
+									</div>
+									<div class="main">
+										<p>- 스폰서 광고 셋팅</p>
+										<span>(￦ 500,000)</span>
+									</div>
+									<div class="main">
+										<p>- 인플루언서 광고</p>
+										<span>변동가</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="packages__box box-hover-blue">
+									<div class="title-bg box-blue">
+										<h4>인스타그램 마케팅 3종</h4>
+									</div>
+									<div class="main">
+										<p>- 최적화 계정 구매</p>
+										<span>(￦ 1,000,000)</span>
+									</div>
+									<div class="main">
+										<p>- 인스타그램 포스팅 10회</p>
+										<span>(￦ 800,000)</span>
+									</div>
+									<div class="main">
+										<p>- 한국인 팔로워 5천명</p>
+										<span>(￦ 1,000,000)</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="packages__box box-hover-blue">
+									<div class="title-bg box-blue">
+										<h4>Web 미디어 마케팅 2종</h4>
+									</div>
+									<div class="main">
+										<p>- 랜딩사이트 제작</p>
+										<span>(￦ 900,000)</span>
+									</div>
+									<div class="main">
+										<p>- 영상 제작</p>
+										<span>(￦ 500,000)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="package__03">
+		<div class="container">
+			<div class="row">
+				<div class="packages__wrap col-lg-12 col-md-12 col-sm-12" id="package-03">
+					<div class="packages__item">
+						<h4 class="orange">소호 사업 패키지</h4>
+						<div class="packages__line bg-orange"></div>
+						<p>
+							상품의 매력을 어필하는 소호사업에서 강조되어야 할 부분은 [상품 매력]과 [판매자 채널 파워] [입소문] 입니다.<br />랜딩사이트는
+							상품의 상세 매력을 풀어나갈 수 있으며 인스타그램 마케팅을 통해<br />입소문과 인지도를 높여 결국 자체적 힘을
+							가질 수 있는 채널 파워를 강화하는 것을 목표로 합니다.
+						</p>
+						<div class="packages__price bg-orange">
+							<h6>
+								<del>￦ 2,850,000~</del>
+							</h6>
+							<h5>
+								<span><i class="fas fa-arrow-right fa-1x"></i></span>￦
+								2,280,000~
+							</h5>
+						</div>
+					</div>
+					<div class="packages__box__wrap">
+						<div class="owl-carousel" data-autoplay="true" data-loop="false"
+							data-nav="true" data-dots="false" data-items="3"
+							data-items-laptop="3" data-items-tab="2" data-items-mobile="1"
+							data-items-mobile-sm="1" data-margin="20">
+							<div class="item">
+								<div class="packages__box box-hover-orange">
+									<div class="title-bg box-orange">
+										<h4>인스타그램 AD 3종</h4>
+									</div>
+									<div class="main">
+										<p>- 인기게시물 상위노출</p>
+										<span>변동가</span>
+									</div>
+									<div class="main">
+										<p>- 스폰서 광고 셋팅</p>
+										<span>(￦ 500,000)</span>
+									</div>
+									<div class="main">
+										<p>- 인플루언서 광고</p>
+										<span>변동가</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="packages__box box-hover-orange">
+									<div class="title-bg box-orange">
+										<h4>인스타그램 마케팅 2종</h4>
+									</div>
+									<div class="main">
+										<p>- 최적화 계정 구매</p>
+										<span>(￦ 1,000,000)</span>
+									</div>
+									<div class="main">
+										<p>- 자동 좋아요 · 댓글 10회</p>
+										<span>(￦ 450,000)</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="packages__box box-hover-orange">
+									<div class="title-bg box-orange">
+										<h4>Web 미디어 마케팅 1종</h4>
+									</div>
+									<div class="main">
+										<p>- 랜딩사이트 제작</p>
+										<span>(￦ 900,000)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="package-04" class="bg-lightgray">
+		<div class="container">
+			<div class="row">
+				<div class="packages__wrap col-lg-12 col-md-12 col-sm-12">
+					<div class="packages__item">
+						<h4 class="pink">뷰티 케어 패키지</h4>
+						<div class="packages__line bg-pink"></div>
+						<p>
+							뷰티 마케팅은 꾸준한 친밀감 형성과 홍보성 광고에 초점을 맞춥니다.<br>광고를 통해 유입되는 유저가
+							랜딩사이트를 통해 관련 정보를 습득 후, 인스타그램에서 친밀도가 높은 유저로<br>변환되어 잠재고객으로
+							전환되는데 초점을 맞추고 있습니다. 이 패키지는 인스타 마케팅 기본 구성으로 입문용으로 추천드립니다.
+						</p>
+						<div class="packages__price bg-pink">
+							<h6>
+								<del>￦ 2,350,000~</del>
+							</h6>
+							<h5>
+								<span><i class="fas fa-arrow-right fa-1x"></i></span> ￦
+								1,880,000~
+							</h5>
+						</div>
+					</div>
+					<div class="packages__box__wrap">
+						<div class="owl-carousel" data-autoplay="true" data-loop="true"
+							data-nav="true"  data-items="3"	data-items-laptop="3" data-items-tab="2" data-items-mobile="1">
+							<div class="item">
+								<div class="packages__box box-hover-pink">
+									<div class="title-bg box-pink">
+										<h4>인스타그램 AD 1종</h4>
+									</div>
+									<div class="main">
+										<p>- 인기게시물 상위노출</p>
+										<span>변동가</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="packages__box box-hover-pink">
+									<div class="title-bg box-pink">
+										<h4>인스타그램 마케팅 2종</h4>
+									</div>
+									<div class="main">
+										<p>- 최적화 계정 구매</p>
+										<span>(￦ 1,000,000)</span>
+									</div>
+									<div class="main">
+										<p>- 자동 좋아요 · 댓글 10회</p>
+										<span>(￦ 450,000)</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="packages__box box-hover-pink">
+									<div class="title-bg box-pink">
+										<h4>Web 미디어 마케팅 1종</h4>
+									</div>
+									<div class="main">
+										<p>- 랜딩사이트 제작</p>
+										<span>(￦ 900,000)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="package-05">
+		<div class="container">
+			<div class="row">
+				<div class="packages__wrap col-lg-12 col-md-12 col-sm-12">
+					<div class="packages__item">
+						<h4 class="gray">개인브랜딩 패키지</h4>
+						<div class="packages__line bg-gray"></div>
+						<p>
+							개인 브랜딩, 인플루언서를 목표로 하는 광고주분께 추천드리는 가장 빠른 패키지입니다.<br />많은 팔로워를
+							유입시키고 인기게시물에 꾸준히 노출하여 인지도를 쌓을 수 있습니다. 꾸준한 자신 노출은 결국 일관된 흐름을 만들고
+							신뢰도 있게 성장하실 수 있습니다.
+						</p>
+						<div class="packages__price bg-gray">
+							<h6>
+								<del>￦ 3,850,000~</del>
+							</h6>
+							<h5>
+								<span><i class="fas fa-arrow-right fa-1x"></i></span>￦
+								3,080,000~
+							</h5>
+						</div>
+					</div>
+					<div class="packages__box__wrap">
+						<div class="owl-carousel" data-autoplay="true" data-loop="false"
+							data-nav="true" data-dots="false" data-items="2"
+							data-items-laptop="2" data-items-tab="2" data-items-mobile="1"
+							data-items-mobile-sm="1" data-margin="20">
+							<div class="item">
+								<div class="packages__box box-hover-gray pk-branding-box">
+									<div class="title-bg box-gray">
+										<h4>인스타그램 AD 1종</h4>
+									</div>
+									<div class="main">
+										<p>- 인기게시물 상위노출</p>
+										<span>변동가</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="packages__box box-hover-gray pk-branding-box">
+									<div class="title-bg box-gray">
+										<h4>인스타그램 마케팅 3종</h4>
+									</div>
+									<div class="main">
+										<p>- 최적화 계정 구매</p>
+										<span>(￦ 1,000,000)</span>
+									</div>
+									<div class="main">
+										<p>- 자동 좋아요 · 댓글 10회</p>
+										<span>(￦ 450,000)</span>
+									</div>
+									<div class="main">
+										<p>- 팔로워 구매 내 · 외국인 1만명</p>
+										<span>(￦ 2,400,000)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="package-6">
+		<div class="col-lg-12 text-center">
+			<div class="packages__separation">
+				<span>Single Services</span>
+				<div class="line"></div>
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="packages__wrap col-lg-12 col-md-12 col-sm-12">
+					<div class="packages__item">
+						<h4>싱글 상품 소개</h4>
+						<div class="packages__line bg-gray"></div>
+						<p>단품 상품 중에서 원하시는 상품만을 골라골라 바로 신청하실 수 있습니다.</p>
+					</div>
+					<div class="packages__box__wrap">
+						<div class="owl-carousel" data-autoplay="true" data-loop="false"
+							data-nav="true" data-dots="false" data-items="3"
+							data-items-laptop="3" data-items-tab="2" data-items-mobile="1"
+							data-items-mobile-sm="1" data-margin="30">
+							<div class="item">
+								<div class="pacakages__solo__box">
+									<div class="solo-title-bg">
+										<h2 id="lg-blue">SNS AD 서비스</h2>
+									</div>
+									<div class="solo-main-wrap">
+										<div class="solo-main">
+											<h3>· 인기게시물 상위 노출</h3>
+											<span>변동가</span>
+											<p>- 인스타그램 해시태그 검색 최상단 노출 AD</p>
+										</div>
+										<div class="solo-main">
+											<h3>· 인플루언서</h3>
+											<span>변동가</span>
+											<p>- 브랜드 · 상품 인지도를 동시에 올릴 수 있는 바이럴 AD</p>
+										</div>
+										<div class="solo-main">
+											<h3>· 블로그 상위노출</h3>
+											<span>변동가</span>
+											<p>- 네이버 검색 시 상위에 올릴 수 있는 노출 AD</p>
+										</div>
+										<div class="solo-main">
+											<h3>· 스폰서광고 대행</h3>
+											<span>셋팅 50만 <br>+ 광고비 10%</span>
+											<p>- 해당 키워드 맞춤 대상 노출 AD</p>
+										</div>
+										<div class="solo-main">
+											<h3>
+												· GDN, 네이버 노출형,<span class="br_auto"></span> 구글검색광고
+											</h3>
+											<span>셋팅 50만 <br>+ 광고비 10%</span>
+											<p>- 검색 광고 노출 AD</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="pacakages__solo__box">
+									<div class="solo-title-bg">
+										<h2 id="md-blue">SNS 마케팅 서비스</h2>
+									</div>
+									<div class="solo-main-wrap">
+										<div class="solo-main">
+											<h3>
+												· 인스타그램 포스팅 10회<span></span>(디자인+원고)
+											</h3>
+											<span>￦ 800,000</span>
+											<p>- 관련 컨텐츠 10회 제작</p>
+										</div>
+										<div class="solo-main">
+											<h3>· 최적화 계정 구매</h3>
+											<span>￦ 1,000,000</span>
+											<p>- 최적화가 되어있는 계정 구매 서비스</p>
+										</div>
+										<div class="solo-main">
+											<h3>· 계정 최적화 서비스</h3>
+											<span>￦ 600,000</span>
+											<p>- 보유 계정 최적화 서비스</p>
+										</div>
+										<div class="solo-main">
+											<h3>· 팔로워 제공 서비스</h3>
+											<span>1천명당 20만</span>
+											<p>- 팔로워 제공을 통한 신뢰도 상승과 잠재고객 유입</p>
+										</div>
+										<div class="solo-main">
+											<h3>
+												· 자동 좋아요 + 댓글 서비스<span></span>10회
+											</h3>
+											<span>￦ 450,000</span>
+											<p>- 포스팅 품질 및 인지도 상승</p>
+										</div>
+										<div class="solo-main">
+											<h3>· 구글 애널리틱스 분석 · 관리</h3>
+											<span>￦ 500,000</span>
+											<p>- 마케팅 관련 자료 분석 서비스</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="pacakages__solo__box">
+									<div class="solo-title-bg">
+										<h2 id="dk-blue">웹 · 미디어 마케팅 서비스</h2>
+									</div>
+									<div class="solo-main-wrap">
+										<div class="solo-main">
+											<h3>· 웹 페이지 제작</h3>
+											<span>￦ 900,000</span>
+											<p>
+												- 다양한 정보를 한눈에 어필할 수 있는 웹 페이지 <br />- 브랜드 자체 사이트 제작 (맞춤가) <br />-
+												고객 맞춤 사이트 구현 (맞춤가)
+											</p>
+										</div>
+										<div class="solo-main">
+											<h3>· 영상 제작</h3>
+											<span>￦ 500,000</span>
+											<p>- 이미지보다 생동감 있게 표현할 수 있는 영상 서비스</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="iq-footer white-bg text-center" th:replace="fragments/front/common :: footer"></footer>
+
+	<th:block th:replace="fragments/front/common :: btn-group"></th:block>
+	<th:block th:replace="fragments/front/script"></th:block>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/front/common :: head('인플루언서 소개')">
+</head>
+
+<body>
+	<th:block th:replace="fragments/front/common :: header-sub"></th:block>
+	<section class="iq-breadcrumb overview-block-pt text-center iq-bg iq-bg-fixed iq-over-black-90 iq-box-shadow"
+		style="background: url(images/about/04.jpg);">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading-title iq-breadcrumb-title iq-mtb-100">
+						<h1 class="title iq-tw-8 iq-font-white">인플루언서 소개</h1>
+						<div class="divider white"></div>
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="#"><i class="ion-home"></i> Home</a></li>
+						<li class="active">influencer</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="main-content">
+		<section id="blog" class="iq-page-blog overview-block-ptb">
+			<div class="container">
+				<div class="row">
+					<div class="iq-sidebar-widget"
+						style="margin: 0px 15px; text-align: center;">
+						<h4 class="iq-widget-title">업종 검색 혹은 #해시태그를 선택해주세요</h4>
+						<div class="iq-widget-search-wrap">
+							<div class="iq-widget-select">
+								<select>
+									<option>카테고리 선택01</option>
+									<option>카테고리 선택02</option>
+									<option>카테고리 선택03</option>
+									<option>카테고리 선택04</option>
+								</select>
+							</div>
+							<div class="iq-widget-select">
+								<select>
+									<option>키워드를 선택하세요.</option>
+									<option>선택02</option>
+									<option>선택03</option>
+									<option>선택04</option>
+								</select>
+							</div>
+							<button>
+								<i class="fa fa-search"></i>
+							</button>
+						</div>
+						<div class="iq-widget-hashtag-wrap">
+							<div class="iq-widget-hashtag">
+								<div class="iq-widget-keyword">
+									<p>#해시태그 01</p>
+								</div>
+								<span>X</span>
+							</div>
+							<div class="iq-widget-hashtag">
+								<div class="iq-widget-keyword">
+									<p>#해시02</p>
+								</div>
+								<span>X</span>
+							</div>
+							<div class="iq-widget-hashtag">
+								<div class="iq-widget-keyword">
+									<p>#해시02</p>
+								</div>
+								<span>X</span>
+							</div>
+							<div class="iq-widget-hashtag">
+								<div class="iq-widget-keyword">
+									<p>#해시02</p>
+								</div>
+								<span>X</span>
+							</div>
+							<div class="iq-widget-hashtag">
+								<div class="iq-widget-keyword">
+									<p>#태그03</p>
+								</div>
+								<span>X</span>
+							</div>
+							<div class="iq-widget-hashtag">
+								<div class="iq-widget-keyword">
+									<p>#해시태그 01</p>
+								</div>
+								<span>X</span>
+							</div>
+							<div class="iq-widget-hashtag">
+								<div class="iq-widget-keyword">
+									<p>#해시02</p>
+								</div>
+								<span>X</span>
+							</div>
+							<div class="iq-widget-hashtag">
+								<div class="iq-widget-keyword">
+									<p>#해시02</p>
+								</div>
+								<span>X</span>
+							</div>
+							<div class="iq-widget-hashtag">
+								<div class="iq-widget-keyword">
+									<p>#해시02</p>
+								</div>
+								<span>X</span>
+							</div>
+							<div class="iq-widget-hashtag">
+								<div class="iq-widget-keyword">
+									<p>#태그03</p>
+								</div>
+								<span>X</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 iq-mt-25 mo-mt-75 mo-mb-75">
+						<div class="iq-client white-bg">
+							<div class="client-img">
+								<img alt="#" class="img-responsive img-circle"
+									th:src="@{/library/front/images/testimonial/fro01.jpg}">
+							</div>
+							<div class="client-info">
+								<div class=" iq-mb-10">
+									<h5 class="iq-tw-6" style="font-size: 22px;">김하늘</h5>
+									<span class="sub-title iq-tw-6">좋아요 수 : 123,432명</span>
+								</div>
+								<p>관련 해시태그 : #32121, #14142214, #32121, #14142214, #32121,
+									#14142214,#여자인플루언서, #식품</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 iq-mt-25 mo-mb-75">
+						<div class="iq-client white-bg">
+							<div class="client-img">
+								<img alt="#" class="img-responsive img-circle"
+									th:src="@{/library/front/images/testimonial/fro02.jpg}">
+							</div>
+							<div class="client-info">
+								<div class="client-name iq-mb-10">
+									<h5 class="iq-tw-6">Jason Adams</h5>
+									<span class="sub-title iq-tw-6">CEO, Appino</span>
+								</div>
+								<p>Lorem ipsum madolor sit amet, consectetur adipisicing
+									elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 iq-mt-25 mo-mb-75">
+						<div class="iq-client white-bg">
+							<div class="client-img">
+								<img alt="#" class="img-responsive img-circle"
+									th:src="@{/library/front/images/testimonial/123.jpg}">
+							</div>
+							<div class="client-info">
+								<div class="client-name iq-mb-10">
+									<h5 class="iq-tw-6">Jason Adams</h5>
+									<span class="sub-title iq-tw-6">CEO, Appino</span>
+								</div>
+								<p>Lorem ipsum madolor sit amet, consectetur adipisicing
+									elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 iq-mt-25 mo-mb-75">
+						<div class="iq-client white-bg">
+							<div class="client-img">
+								<img alt="#" class="img-responsive img-circle"
+									th:src="@{/library/front/images/testimonial/123.jpg}">
+							</div>
+							<div class="client-info">
+								<div class="client-name iq-mb-10">
+									<h5 class="iq-tw-6">Jason Adams</h5>
+									<span class="sub-title iq-tw-6">CEO, Appino</span>
+								</div>
+								<p>Lorem ipsum madolor sit amet, consectetur adipisicing
+									elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 iq-mt-25 mo-mb-75">
+						<div class="iq-client white-bg">
+							<div class="client-img">
+								<img alt="#" class="img-responsive img-circle"
+									th:src="@{/library/front/images/testimonial/123.jpg}">
+							</div>
+							<div class="client-info">
+								<div class="client-name iq-mb-10">
+									<h5 class="iq-tw-6">Jason Adams</h5>
+									<span class="sub-title iq-tw-6">CEO, Appino</span>
+								</div>
+								<p>Lorem ipsum madolor sit amet, consectetur adipisicing
+									elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 iq-mt-25 mo-mb-75">
+						<div class="iq-client white-bg">
+							<div class="client-img">
+								<img alt="#" class="img-responsive img-circle"
+									th:src="@{/library/front/images/testimonial/123.jpg}">
+							</div>
+							<div class="client-info">
+								<div class="client-name iq-mb-10">
+									<h5 class="iq-tw-6">Jason Adams</h5>
+									<span class="sub-title iq-tw-6">CEO, Appino</span>
+								</div>
+								<p>Lorem ipsum madolor sit amet, consectetur adipisicing
+									elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 iq-mt-25 mo-mb-75">
+						<div class="iq-client white-bg">
+							<div class="client-img">
+								<img alt="#" class="img-responsive img-circle"
+									th:src="@{/library/front/images/testimonial/123.jpg}">
+							</div>
+							<div class="client-info">
+								<div class="client-name iq-mb-10">
+									<h5 class="iq-tw-6">Jason Adams</h5>
+									<span class="sub-title iq-tw-6">CEO, Appino</span>
+								</div>
+								<p>Lorem ipsum madolor sit amet, consectetur adipisicing
+									elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 iq-mt-25 mo-mb-75">
+						<div class="iq-client white-bg">
+							<div class="client-img">
+								<img alt="#" class="img-responsive img-circle"
+									th:src="@{/library/front/images/testimonial/123.jpg}">
+							</div>
+							<div class="client-info">
+								<div class="client-name iq-mb-10">
+									<h5 class="iq-tw-6">Jason Adams</h5>
+									<span class="sub-title iq-tw-6">CEO, Appino</span>
+								</div>
+								<p>Lorem ipsum madolor sit amet, consectetur adipisicing
+									elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 iq-mt-25 mo-mb-75">
+						<div class="iq-client white-bg">
+							<div class="client-img">
+								<img alt="#" class="img-responsive img-circle"
+									th:src="@{/library/front/images/testimonial/123.jpg}">
+							</div>
+							<div class="client-info">
+								<div class="client-name iq-mb-10">
+									<h5 class="iq-tw-6">Jason Adams</h5>
+									<span class="sub-title iq-tw-6">CEO, Appino</span>
+								</div>
+								<p>Lorem ipsum madolor sit amet, consectetur adipisicing
+									elit, sed do eiusmod tempor coli incididunt ut labore.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row iq-mt-80">
+					<div class="col-lg-12 col-md-12 text-center">
+						<ul class="pagination pagination-lg">
+							<li class="disabled"><a href="javascript:void(0)"> <i
+									class="ion-ios-arrow-left"></i>
+							</a></li>
+							<li class="active"><a href="javascript:void(0)">1</a></li>
+							<li><a href="javascript:void(0)">2</a></li>
+							<li><a href="javascript:void(0)">3</a></li>
+							<li><a href="javascript:void(0)">4</a></li>
+							<li><a href="javascript:void(0)">5</a></li>
+							<li><a href="javascript:void(0)"> <i
+									class="ion-ios-arrow-right"></i>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="iq-footer white-bg text-center" th:replace="fragments/front/common :: footer"></footer>
+	<th:block th:replace="fragments/front/common :: btn-group"></th:block>
+	<th:block th:replace="fragments/front/script"></th:block>
+
+</body>
+
+</html>
